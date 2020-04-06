@@ -36,6 +36,21 @@ class User implements UserInterface
      */
     private $password;
 
+    /**
+     * @ORM\Column(type="string", length=2)
+     */
+    private $countryCode;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $verificationRequestId;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $verified;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -112,5 +127,41 @@ class User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getCountryCode(): ?string
+    {
+        return $this->countryCode;
+    }
+
+    public function setCountryCode(string $countryCode): self
+    {
+        $this->countryCode = $countryCode;
+
+        return $this;
+    }
+
+    public function getVerificationRequestId(): ?string
+    {
+        return $this->verificationRequestId;
+    }
+
+    public function setVerificationRequestId(?string $verificationRequestId): self
+    {
+        $this->verificationRequestId = $verificationRequestId;
+
+        return $this;
+    }
+
+    public function getVerified(): ?bool
+    {
+        return $this->verified;
+    }
+
+    public function setVerified(bool $verified): self
+    {
+        $this->verified = $verified;
+
+        return $this;
     }
 }

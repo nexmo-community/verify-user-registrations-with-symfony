@@ -10,12 +10,27 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add(
+                'countryCode',
+                ChoiceType::class,
+                [
+                    'label' => false,
+                    'attr' => [
+                        'class' => 'form-control form-control-lg'
+                    ],
+                    'choices' => [
+                        "United Kingdom" => "GB",
+                        "United States" => "US"
+                    ]
+                ]
+            )
             ->add('phoneNumber', TextType::class, [
                 'label' => false,
                 'attr' => [
