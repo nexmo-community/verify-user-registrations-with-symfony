@@ -39,17 +39,6 @@ cd verify-user-registrations-with-symfony
 git checkout starter
 ```
 
-### Installing Third Party Libraries
-
-Several third party libraries already defined and need to be installed, both via Composer and yarn packages.
-
-Change directory into `symfony/` and run the following three commands:
-
-```
-composer install
-yarn install
-yarn run dev
-```
 
 ### Database Credentials
 
@@ -57,6 +46,18 @@ Within the `symfony/` directory create a `.env.local` file, which will be where 
 
 ```
 DATABASE_URL=postgresql://user:password@postgres:5432/test?serverVersion=11&charset=utf8
+```
+
+### Installing Third Party Libraries
+
+Several third party libraries already defined and need to be installed, both via Composer and yarn packages.
+
+Run the following three commands:
+
+```
+composer install
+yarn install
+yarn run dev
 ```
 
 ### Running Docker
