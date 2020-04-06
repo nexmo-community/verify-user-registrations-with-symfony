@@ -24,7 +24,7 @@ This branch is the starter branch for the accompanying post at: [Blog post url h
 
 - [Docker](https://www.docker.com/)
 - [Node Package Manager (NPM)](https://www.npmjs.com/get-npm)
-- [A Vonage (formally Nexmo) account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=symfony-5-verify-api)
+- [A Vonage (formally Nexmo) account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=https://github.com/nexmo-community/verify-user-registrations-with-symfony)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## Getting Started
