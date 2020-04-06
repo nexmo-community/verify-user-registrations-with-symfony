@@ -1,0 +1,5 @@
+@import "../../node_modules/bootstrap";
+
+.container-fluid {
+    padding-top: 50px;
+}
