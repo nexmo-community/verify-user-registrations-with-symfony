@@ -31,22 +31,17 @@ This branch is the starter branch for the accompanying post at: [Blog post url h
 
 ### Cloning the Repository and Checking out the Starter Branch
 
-Clone the existing repository by copying this command into your Terminal, and then change directory into the project:
+Run the following three commands to clone this repository, change directory into the repository directory, and then checkout to the starter branch.
 
 ```
 git clone git@github.com:nexmo-community/verify-user-registrations-with-symfony.git
 cd verify-user-registrations-with-symfony
-```
-
-To start with, you're going to need to checkout into the starter repository by typing in your Terminal the following:
-
-```
 git checkout starter
 ```
 
 ### Installing Third Party Libraries
 
-Several third party libraries already defined in this project need to be installed, both via Composer and yarn packages.
+Several third party libraries already defined and need to be installed, both via Composer and yarn packages.
 
 Change directory into `symfony/` and run the following three commands:
 
@@ -66,11 +61,9 @@ DATABASE_URL=postgresql://user:password@postgres:5432/test?serverVersion=11&char
 
 ### Running Docker
 
-For the purpose of this tutorial and to ensure that the server requirements are the same for everyone, a Docker config has been set up in order to use containers with predefined configurations.
-
 Within the `docker/` directory run: `docker-compose up -d`.
 
-By the end of this you should be shown the confirmation that the three containers are running.
+Once completed should be shown the confirmation that the three containers are running.
 
 ### Running Database Migrations
 
