@@ -4,13 +4,13 @@
 
 Users registering with false information can be a pest, which is especially the case when registering with phone numbers that are expected to be contactable. Vonage's Verify API provides a solution to this by enabling you to confirm that the phone number is correct and owned by the user. The API takes a phone number, sends a pin code to that phone number and expects it to be relayed back through the correct source.
 
-This branch is the starter branch for the accompanying post at: [Blog post url here](#)
+The `master` branch is the starting branch for the accompanying post at: [Blog post url here](#)
 
 **Table of Contents**
 
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-  - [Cloning the Repository and Checking out the Starter Branch](#cloning-the-repository-and-check-out-the-starter-branch)
+  - [Cloning the Repository](#cloning-the-repository)
   - [Installing Third Party Libraries](#installing-third-party-libraries)
   - [Database Credentials](#database-credentials)
   - [Running Docker](#running-docker)
@@ -29,14 +29,13 @@ This branch is the starter branch for the accompanying post at: [Blog post url h
 
 ## Getting Started
 
-### Cloning the Repository and Checking out the Starter Branch
+### Cloning the Repository
 
-Run the following three commands to clone this repository, change directory into the repository directory, and then checkout to the starter branch.
+Run the following two commands to clone this repository and change directory into the repository directory.
 
 ```
 git clone git@github.com:nexmo-community/verify-user-registrations-with-symfony.git
 cd verify-user-registrations-with-symfony
-git checkout starter
 ```
 
 
